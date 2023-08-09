@@ -1,0 +1,10 @@
+load("@pip//:requirements.bzl", "requirement")
+
+exports_files(["requirements_lock.txt"])
+
+py_library(
+    name = "test_sphinx",
+    deps = [
+        requirement("sphinx"),
+    ],
+)
